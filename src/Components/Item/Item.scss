@@ -1,0 +1,59 @@
+.Item {
+    border: 1px solid gray;
+    margin:7px;
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    > div {
+        position:relative;
+        padding:17px;
+        text-align: left;
+        .forkedBadge {
+            position: absolute;
+            top:7px;
+            right:7px;
+            background:#3F87C6;
+            color:white;
+            padding:1px;
+            font-size:10px;
+        }
+    }
+    .col1 {
+        b {
+            display: block;
+            margin-bottom:17px;
+            a {
+                text-decoration: none;
+                color: #3F87C6;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    } 
+    .col2,.col3 {
+        text-align: center;
+        border-left:1px solid gray;
+        span {
+            display: block;
+        }
+    }
+    @media screen and (max-width:800px) {
+        grid-template-columns: none;
+        grid-template-rows: auto auto auto;
+        font-size:13px;
+        .col1 b {
+            margin-bottom:12px;
+        }
+        .col2,.col3 {
+            text-align: left;
+            border-left:none;
+            border-top:1px solid gray;
+            span {
+                display: inline;
+            }
+            span:first-child {
+                margin-right:6px;
+            }
+        }
+    }
+}

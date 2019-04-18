@@ -1,0 +1,25 @@
+.App {
+  background:white;
+  header {
+    height:50px;
+    background-color: #3F87C6;
+    .logo {
+      padding-top:25px;
+      margin-left:20px;
+      width:100px;
+      height:51px;
+      background:url('./assets/logo.png') center no-repeat;
+      background-size:100%;
+      text-indent: -9999px;
+    }
+  }
+  .container {
+    text-align: center;
+    min-height:600px;
+    .loadingMessage {
+      margin:7px;
+    }
+  }
+}
+
+

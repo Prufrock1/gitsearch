@@ -1,0 +1,11 @@
+.ResultsContainer {
+    width: 800px;
+    margin: 70px auto 0px auto;
+    .title {
+        margin-bottom:34px;
+    }
+    @media screen  and (max-width:800px) {
+        width: 94%;
+        margin-left:3%
+    }
+}
